@@ -11,7 +11,7 @@ Converting the disk before the upload
 -------------------------------------
 
 
-Upload of the disks on AWS
+Upload of the disk on AWS
 --------------------------
 
 References
