@@ -13,7 +13,11 @@ $ vi /etc/fstab
 ```bash
 $ rm -f /var/log/context.log
 ```
-* (Optional) As root, remove the old oozie log files (they can be heavy):
+* As root, remove the persistent rules (e.g. network interfaces):
+```bash
+$ rm -f /etc/udev/rules.d/70-persistent-*
+```
+* *(Optional)* As root, remove the old oozie log files (they can be heavy):
 ```bash
 $ rm -rf /var/log/oozie
 ```
