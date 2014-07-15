@@ -5,25 +5,19 @@ Preparation of the disk
 -----------------------
 
 * Login into the Sandbox,
-* As root, remove all external disks from /etc/fstab (*Tip*. Make first a backup of that file to eventually replace it at the end of the exporting process):
+* Type:
 ```bash
-$ vi /etc/fstab
-```
-* As root, remove the old contextualization log file:
-```bash
-$ rm -f /var/log/context.log
-```
-* As root, remove the persistent rules (e.g. network interfaces):
-```bash
-$ rm -f /etc/udev/rules.d/70-persistent-*
-```
-* *(Optional)* As root, remove the old oozie log files (they can be heavy):
-```bash
-$ rm -rf /var/log/oozie
+$ ciop-cloud-prepare
 ```
 
 Snapshot of the disk
 ---------------------
+
+* Login into the Sandbox,
+* Type:
+```bash
+$ ciop-cloud-restore
+```
 
 Converting the disk before the upload
 -------------------------------------
