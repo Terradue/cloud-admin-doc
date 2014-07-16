@@ -39,6 +39,10 @@ $ vmware-vdiskmanager -r <destination-disk-type0> -t 5 <destination-disk-type5>
 Upload of the disk on AWS
 --------------------------
 
+```bash
+$ ec2-import-instance -o <bucket-owner-access-key> -w <bucket-owner-secret-key> -f vmdk <vmdk_disk_type_5> -b <bucket_name> --region <region_name> -t <instance_type> -s <disk size> -a x86_64 -p Linux 
+```
+
 References
 ----------
 
