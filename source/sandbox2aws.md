@@ -1,4 +1,4 @@
-Exporting a Terradue's Cloud Developer Sandbox to AWS
+Exporting a Terradue's Developer Cloud Sandbox to AWS
 =====================================================
 
 Preparation of the disk
