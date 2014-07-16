@@ -7,7 +7,7 @@ Preparation of the disk
 * Login into the Sandbox,
 * Type:
 ```bash
-$ ciop-cloud-prepare
+$ ./ciop-cloud-prepare.sh
 ```
 
 Snapshot of the disk
@@ -16,12 +16,17 @@ Snapshot of the disk
 * Login into the Sandbox,
 * Type:
 ```bash
-$ ciop-cloud-restore
+$ ./ciop-cloud-restore.sh
 ```
 
 Converting the disk before the upload
 -------------------------------------
 
+* Convert the disk in a format suitable for AWS EC2
+
+```bash
+$ qemu-convert <source-disk>
+```
 
 Upload of the disk on AWS
 --------------------------
