@@ -21,8 +21,10 @@ mkdir -p /mnt/application
 mount $app_disk /mnt/application
 
 # TODO: check disk free on destination
-cp -r /mnt/application /application
+cp -r /mnt/application /application/
 
 cp pre_init.sh /mnt/context/
+
+chmod +x /mnt/context/pre_init.sh
 
 exit 0
