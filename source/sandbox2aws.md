@@ -13,6 +13,12 @@ $ ./ciop-cloud-prepare.sh
 Snapshot of the disk
 ---------------------
 
+* Login into the Cloud Controller,
+* Make an **Hot** snapshot of the OS disk.
+
+Restore of the Sandbox
+----------------------
+
 * Login into the Sandbox,
 * Type:
 ```bash
@@ -22,6 +28,7 @@ $ ./ciop-cloud-restore.sh
 Converting the disk before the upload
 -------------------------------------
 
+* Download the disk from the Cloud Controller,
 * Convert the disk in a format suitable for ec2-import-instance tool:
 
 ```bash
