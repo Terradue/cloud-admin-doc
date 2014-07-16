@@ -22,10 +22,11 @@ $ ./ciop-cloud-restore.sh
 Converting the disk before the upload
 -------------------------------------
 
-* Convert the disk in a format suitable for AWS EC2
+* Convert the disk in a format suitable for ec2-import-instance tool:
 
 ```bash
-$ qemu-img convert -O vmdk <source-disk> <destination-disk>
+$ qemu-img convert -O vmdk <source-disk> <destination-disk-type0>
+$ vmware-vdiskmanager -r <destination-disk-type0> -t 5 <destination-disk-type5>
 ```
 
 Upload of the disk on AWS
