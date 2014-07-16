@@ -25,7 +25,7 @@ Converting the disk before the upload
 * Convert the disk in a format suitable for AWS EC2
 
 ```bash
-$ qemu-convert <source-disk>
+$ qemu-img convert -O vmdk <source-disk> <destination-disk>
 ```
 
 Upload of the disk on AWS
