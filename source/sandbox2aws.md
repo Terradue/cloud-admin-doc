@@ -28,7 +28,7 @@ $ ./ciop-cloud-restore.sh
 Converting the disk before the upload
 -------------------------------------
 
-* Download the disk from the Cloud Controller,
+* Download the disk from the Cloud Controller (or from a location made available from the Terradue Support Team),
 * Convert the disk in a format suitable for ec2-import-instance tool:
 
 ```bash
