@@ -27,4 +27,11 @@ cp pre_init.sh /mnt/context/
 
 chmod +x /mnt/context/pre_init.sh
 
-exit 0
+# /etc/rc.d/rc.local
+#touch /var/lock/subsys/local
+
+#if [ -f /mnt/context/pre_init.sh ]; then
+#  sh -x /mnt/context/pre_init.sh >>/var/log/context.log 2>&1
+#fi
+
+#exit 0
