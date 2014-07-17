@@ -10,7 +10,7 @@ Re-create the partition
 -----------------------
 
 * Login into the Sandbox,
-* Check your partition table by typing (we are assuming that the main device is */dev/xvda*):
+* Check your partition table by typing:
 ```bash
 $ fdisk -l /dev/xvda
 
@@ -26,6 +26,8 @@ Disk identifier: 0x0007572f
 Partition 1 does not end on cylinder boundary.
 /dev/xvda2              64       19581   156771358+  8e  Linux LVM
 ```
+
+*Here we are assuming that the main device is */dev/xvda**
 
 * Modify the partition table, by typing:
 ```bash
