@@ -1,5 +1,5 @@
-Exporting a Terradue's Developer Cloud Sandbox to AWS
-=====================================================
+How to export a Terradue's Developer Cloud Sandbox to AWS
+=========================================================
 
 Preparation of the disk
 -----------------------
