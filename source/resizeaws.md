@@ -9,8 +9,47 @@ You have a running or just imported Developer Cloud Sandbox on AWS EC2 and you w
 Re-create the partition
 -----------------------
 
+* Login into the Sandbox,
+* Check your partition table by typing (we are assuming that the main device is */dev/xvda*):
+```bash
+$ fdisk -l /dev/xvda
 
+Disk /dev/xvda: 161.1 GB, 161061273600 bytes
+255 heads, 63 sectors/track, 19581 cylinders
+Units = cylinders of 16065 * 512 = 8225280 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x0007572f
 
+    Device Boot      Start         End      Blocks   Id  System
+/dev/xvda1   *           1          64      512000   83  Linux
+Partition 1 does not end on cylinder boundary.
+/dev/xvda2              64       19581   156771358+  8e  Linux LVM
+```
+
+* Modify the partition table, by typing:
+```bash
+$ fdisk /dev/xvda
+(fdisk) Command (m for help): d
+(fdisk) Partition number (1-4): 2
+(fdisk) Command (m for help): n
+(fdisk) Partition type:
+p primary
+e extended
+Select (default p): p
+Partition number (1-4, default 1): 2
+First sector (63-40558591, default 63): 64
+Last sector, +sectors or +size{K,M,G} (63-40558591, default 40558591): [PRESS ENTER TO ACCEPT LARGEST DEFAULT]
+(fdisk) Command (m for help): t
+Partition number (1-4): 1
+Hex Code (type L to list codes): 8e
+(fdisk) Command (m for help): w
+```
+
+* Reboot the system:
+```bash
+$ reboot
+```
 
 Extend the LVM
 ---------------
