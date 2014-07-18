@@ -3,15 +3,15 @@
 # remove all external disks from /etc/fstab
 cp /etc/fstab /etc/fstab.bkp
 
-# remove the old contextualization log file
-rm -f /var/log/context.log
+# move the old contextualization log file to another name
+mv /var/log/context.log /var/log/context.log.sandbox
 
 # remove the persistent rules (e.g. network interfaces)
 rm -f /etc/udev/rules.d/70-persistent-*
 
 # TODO: ask for the choice
-# (Optional) remove the old oozie log files (they can be heavy)
-rm -rf /var/log/oozie
+# (Optional) mv the old oozie log files (they can be heavy)
+mv /var/log/oozie /tmp/
 
 app_disk=`blkid | grep CIOP_APP | cut -d: -f1`
 
