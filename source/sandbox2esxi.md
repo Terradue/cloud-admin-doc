@@ -12,7 +12,7 @@ Step 1. Preparation of the Sandbox
 * Login into the Sandbox,
 * Type:
 ```bash
-$ ./scripts/ciop-cloud-prepare.sh
+$ ./resources/scripts/ciop-cloud-prepare.sh
 ```
 
 Step 2. Snapshot of the disk
@@ -27,7 +27,7 @@ Step 3. Restore of the Sandbox
 * Login into the Sandbox,
 * Type:
 ```bash
-$ ./scripts/ciop-cloud-restore.sh
+$ ./resources/scripts/ciop-cloud-restore.sh
 ```
 
 Step 4. Converting the disk before the upload
