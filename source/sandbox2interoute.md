@@ -33,7 +33,7 @@ $ ./resources/scripts/ciop-cloud-restore.sh
 Step 4. Upload of the disk on Interoute
 ---------------------------------------
 
-* Follow the walk through described [here](https://hub.interoute.com/VDCImageUpload/assets/ImageUploader/) (There is a PDF version in this repo, under *./resources/pdf*.
+* Follow the walk through described [here](https://hub.interoute.com/VDCImageUpload/assets/ImageUploader/) (There is a PDF version in this repo, under *./resources/pdf*).
 
 References
 ----------
