@@ -6,8 +6,8 @@ Intended audience
 
 Anyone has the technical background to interact with *nix systems, BASH language, command line interfaces (CLI) and common network communication protocols. 
 
-Step 1. Preparation of the disk
--------------------------------
+Step 1. Preparation of the Sandbox
+----------------------------------
 
 * Login into the Sandbox,
 * Type:
