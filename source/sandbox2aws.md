@@ -1,8 +1,13 @@
 How to export a Terradue's Developer Cloud Sandbox to AWS
 =========================================================
 
-Preparation of the disk
------------------------
+Intended audience
+-----------------
+
+Anyone has the technical background to interact with *nix systems, BASH language, command line interfaces (CLI) and common network communication protocols. 
+
+Step 1. Preparation of the disk
+-------------------------------
 
 * Login into the Sandbox,
 * Type:
@@ -10,14 +15,14 @@ Preparation of the disk
 $ ./ciop-cloud-prepare.sh
 ```
 
-Snapshot of the disk
----------------------
+Step 2. Snapshot of the disk
+----------------------------
 
 * Login into the Cloud Controller,
 * Make an **Hot** snapshot of the OS disk.
 
-Restore of the Sandbox
-----------------------
+Step 3. Restore of the Sandbox
+------------------------------
 
 * Login into the Sandbox,
 * Type:
@@ -25,8 +30,8 @@ Restore of the Sandbox
 $ ./ciop-cloud-restore.sh
 ```
 
-Converting the disk before the upload
--------------------------------------
+Step 4. Converting the disk before the upload
+---------------------------------------------
 
 * Download the disk from the Cloud Controller (or from a location made available from the Terradue Support Team),
 * Convert the disk in a format suitable for ec2-import-instance tool:
@@ -36,8 +41,8 @@ $ qemu-img convert -O vmdk <source-disk> <destination-disk-type0>
 $ vmware-vdiskmanager -r <destination-disk-type0> -t 5 <destination-disk-type5>
 ```
 
-Upload of the disk on AWS
---------------------------
+Step 5. Upload of the disk on AWS
+---------------------------------
 
 ```bash
 $ ec2-import-instance -o <bucket-owner-access-key> -w <bucket-owner-secret-key> -f vmdk <vmdk_disk_type_5> -b <bucket_name> --region <region_name> -t <instance_type> -s <disk size> -a x86_64 -p Linux 
