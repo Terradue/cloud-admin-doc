@@ -12,7 +12,7 @@ Step 1. Preparation of the Sandbox
 * Login into the Sandbox,
 * Type:
 ```bash
-$ ./scripts/ciop-cloud-prepare.sh
+$ ./resources/scripts/ciop-cloud-prepare.sh
 ```
 
 Step 2. Snapshot of the disk
@@ -27,13 +27,13 @@ Step 3. Restore of the Sandbox
 * Login into the Sandbox,
 * Type:
 ```bash
-$ ./scripts/ciop-cloud-restore.sh
+$ ./resources/scripts/ciop-cloud-restore.sh
 ```
 
 Step 4. Converting the disk before the upload
 ---------------------------------------------
 
-* Download the disk from the Cloud Controller (or from a location made available from the Terradue Support Team),
+* Download the disk from the Cloud Controller (or from a location made available from the Operations Support Team at Terradue),
 * Convert the disk in a format suitable for ec2-import-instance tool:
 
 ```bash
@@ -53,7 +53,3 @@ References
 
 1. [AWS VM Import/Export](http://aws.amazon.com/ec2/vm-import/)
 2. [AWS VM Import/Export for Linux](http://aws.amazon.com/blogs/aws/vm-import-export-for-linux/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+AmazonWebServicesBlog+(Amazon+Web+Services+Blog))
-
-
-
-
