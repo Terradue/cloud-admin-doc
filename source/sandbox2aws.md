@@ -46,8 +46,8 @@ $ ec2-import-instance -o <bucket-owner-access-key> -w <bucket-owner-secret-key> 
 References
 ----------
 
-1. [VM Import/Export](http://aws.amazon.com/ec2/vm-import/)
-2. [VM Import/Export for Linux](http://aws.amazon.com/blogs/aws/vm-import-export-for-linux/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+AmazonWebServicesBlog+(Amazon+Web+Services+Blog))
+1. [AWS VM Import/Export](http://aws.amazon.com/ec2/vm-import/)
+2. [AWS VM Import/Export for Linux](http://aws.amazon.com/blogs/aws/vm-import-export-for-linux/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+AmazonWebServicesBlog+(Amazon+Web+Services+Blog))
 
 
 
