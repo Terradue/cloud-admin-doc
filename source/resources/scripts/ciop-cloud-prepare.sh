@@ -23,15 +23,18 @@ mount $app_disk /mnt/application
 # TODO: check disk free on destination
 cp -r /mnt/application /application/
 
-cp pre_init.sh /mnt/context/
-
+# Prepare the remote contextualization
+cp ./pre_init.sh /mnt/context/
 chmod +x /mnt/context/pre_init.sh
 
-# /etc/rc.d/rc.local
-#touch /var/lock/subsys/local
+mv /etc/rc.d/rc.local /etc/rc.d/rc.local.bkp
 
-#if [ -f /mnt/context/pre_init.sh ]; then
-#  sh -x /mnt/context/pre_init.sh >>/var/log/context.log 2>&1
-#fi
+cat > /etc/rc.d/rc.local << EOF
+touch /var/lock/subsys/local
 
-#exit 0
+if [ -f /mnt/context/pre_init.sh ]; then
+  sh -x /mnt/context/pre_init.sh >>/var/log/context.log 2>&1
+fi
+EOF
+
+exit 0
