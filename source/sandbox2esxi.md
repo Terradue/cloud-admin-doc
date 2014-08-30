@@ -42,7 +42,7 @@ $ qemu-img convert -O vmdk <source-disk> <destination-disk-type0>
 Step 5. Upload of the disk on ESXi
 ----------------------------------
 
-* Login into the ESXi hypervisor through the vSphere client,
+* Login into the ESXi hypervisor through the VMware vSphere client,
 * Click on ..,
 
 
