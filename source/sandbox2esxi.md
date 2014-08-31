@@ -67,9 +67,19 @@ Step 6. Create a virtual machine's configuration file (.vmx)
 
 * Login into the ESXi hypervisor through the VMware vSphere client,
 * Create a new Virtual Machine,
+* Select "Custom" as *Configuration*,
+
+
+Hereafter the entire procedure described with images:
 ![Create a new Virtual Machine](resources/images/esxi_1.png "Create a new Virtual Machine")
-* Select the Virtual Machine name,
-![Virtual Machine name](resources/images/esxi_2.png "Virtual MAchine name") 
+![Virtual Machine configuration](resources/images/esxi_2.png "Virtual Machine configuration")
+![Virtual Machine configuration](resources/images/esxi_3.png "Virtual Machine configuration")
+![Virtual Machine configuration](resources/images/esxi_4.png "Virtual Machine configuration")
+![Virtual Machine configuration](resources/images/esxi_5.png "Virtual Machine configuration")
+![Virtual Machine configuration](resources/images/esxi_6.png "Virtual Machine configuration")
+![Virtual Machine configuration](resources/images/esxi_7.png "Virtual Machine configuration")
+![Virtual Machine configuration](resources/images/esxi_8.png "Virtual Machine configuration")
+![Virtual Machine configuration](resources/images/esxi_9.png "Virtual Machine configuration")
 
 
 References
