@@ -56,9 +56,17 @@ $ qemu-img convert -O vmdk <source-disk-raw> <destination-disk-vmdk>
 Step 5. Upload of the disk on ESXi
 ----------------------------------
 
-* Login into the ESXi hypervisor through the VMware vSphere client,
-* Click on ..,
+* Copy the disk in VMDK format in a datastore you prefer. You can use the following command:
 
+```bash
+$ scp /path/to/disk.vmdk root@<esxi_host>:/vmfs/volumes/<datastore>/
+```
+
+Step 6. Create a virtual machine's configuration file (.vmx)
+------------------------------------------------------------
+
+* Login into the ESXi hypervisor through the VMware vSphere client,
+* 
 
 References
 ----------
