@@ -6,6 +6,13 @@ Intended audience
 
 Anyone has the technical background to interact with *nix systems, BASH language, command line interfaces (CLI) and common network communication protocols.
 
+Prerequisites
+-------------
+
+* To have root/admin permissions on the Sandbox,
+* To have root/admin access to an ESXi 5.x installation,
+* To have installed the [qemu-img](http://wiki.qemu.org/Main_Page) tool for manipulating disk images.
+
 Step 1. Preparation of the Sandbox
 ----------------------------------
 
@@ -19,7 +26,7 @@ If the previous facts are verified, proceed with the following steps:
 * Login into the Sandbox,
 * Type:
 ```bash
-$ ./resources/scripts/ciop-sandbox-prepare.sh
+$ sh ./resources/scripts/ciop-sandbox-prepare.sh
 ```
 
 Step 2. Snapshot of the disk
@@ -34,7 +41,7 @@ Step 3. Restore of the Sandbox
 * Login into the Sandbox,
 * Type:
 ```bash
-$ ./resources/scripts/ciop-sandbox-restore.sh
+$ sh ./resources/scripts/ciop-sandbox-restore.sh
 ```
 
 Step 4. Upload of the disk on Interoute
