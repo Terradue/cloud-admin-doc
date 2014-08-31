@@ -1,5 +1,5 @@
-How to export a Terradue's Developer Cloud Sandbox to VMware ESXi
-=================================================================
+How to export a Terradue's Developer Cloud Sandbox to VMware ESXi 5.x
+=====================================================================
 
 Intended audience
 -----------------
@@ -10,7 +10,7 @@ Prerequisites
 -------------
 
 * To have root/admin permissions on the Sandbox,
-* To have root/admin access to an ESXi installation,
+* To have root/admin access to an ESXi 5.x installation,
 * To have installed the [qemu-img](http://wiki.qemu.org/Main_Page) tool for manipulating disk images.
 
 Step 1. Preparation of the Sandbox
@@ -68,9 +68,16 @@ Step 6. Create a virtual machine's configuration file (.vmx)
 * Login into the ESXi hypervisor through the VMware vSphere client,
 * Create a new Virtual Machine,
 * Select "Custom" as *Configuration*,
+* Select the name of the new Virtual Machine,
+* Select "Virtual Machine version:8" as *Virtual Machine version*,
+* Select "CentOS 4/5/6" as *Guest Operating System*,
+* Select "Use an existing virtual disk" in the *Select disk* step and choose the upload disk (see Step 5),
+* Review the Virtual Machine configuration and start it.
 
+*Note.* Some steps like CPU, RAM or Network selection, are omitted since they are installation specific steps.
 
 Hereafter the entire procedure described with images:
+
 ![Create a new Virtual Machine](resources/images/esxi_1.png "Create a new Virtual Machine")
 ![Virtual Machine configuration](resources/images/esxi_2.png "Virtual Machine configuration")
 ![Virtual Machine configuration](resources/images/esxi_3.png "Virtual Machine configuration")
