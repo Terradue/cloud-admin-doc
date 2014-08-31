@@ -90,13 +90,13 @@ Hereafter the entire procedure described with images:
 
 ![Create a new Virtual Machine](resources/images/esxi_1.png "Create a new Virtual Machine")
 ![Virtual Machine configuration](resources/images/esxi_2.png "Virtual Machine configuration")
-![Virtual Machine configuration](resources/images/esxi_3.png "Virtual Machine configuration")
-![Virtual Machine configuration](resources/images/esxi_4.png "Virtual Machine configuration")
-![Virtual Machine configuration](resources/images/esxi_5.png "Virtual Machine configuration")
-![Virtual Machine configuration](resources/images/esxi_6.png "Virtual Machine configuration")
-![Virtual Machine configuration](resources/images/esxi_7.png "Virtual Machine configuration")
-![Virtual Machine configuration](resources/images/esxi_8.png "Virtual Machine configuration")
-![Virtual Machine configuration](resources/images/esxi_9.png "Virtual Machine configuration")
+![Virtual Machine name](resources/images/esxi_3.png "Virtual Machine name")
+![Virtual Machine version](resources/images/esxi_4.png "Virtual Machine version")
+![Virtual Machine OS](resources/images/esxi_5.png "Virtual Machine OS")
+![Virtual Machine disk](resources/images/esxi_6.png "Virtual Machine disk")
+![Virtual Machine disk](resources/images/esxi_7.png "Virtual Machine disk")
+![Virtual Machine review](resources/images/esxi_8.png "Virtual Machine review")
+![Virtual Machine run](resources/images/esxi_9.png "Virtual Machine run")
 
 
 References
