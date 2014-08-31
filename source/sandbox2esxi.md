@@ -66,7 +66,9 @@ Step 6. Create a virtual machine's configuration file (.vmx)
 ------------------------------------------------------------
 
 * Login into the ESXi hypervisor through the VMware vSphere client,
-* 
+
+![Alt text](resources/images/esxi_1.png "Optional title") 
+
 
 References
 ----------
