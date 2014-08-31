@@ -16,6 +16,11 @@ Prerequisites
 Step 1. Preparation of the Sandbox
 ----------------------------------
 
+This step prepares your Sandbox in terms OS configuration. Furthermore it makes the OS and the Application disks a single one (i.e. copy all the content of the */application* mount point in the */* mount poiny). Before to start, please make sure that:
+
+# The */application* contains only the needed stuff to be executed in Cluster mode (i.e. it is clean), 
+# The */* has enough space to contain all the data of the */application* (If not, please contact the Operations Support at Terradue).  
+
 * Login into the Sandbox,
 * Copy the content of the folder *resources/scripts* in a directory you prefer,
 * Type:
@@ -71,7 +76,7 @@ Step 6. Create a virtual machine's configuration file (.vmx)
 * Select the name of the new Virtual Machine,
 * Select "Virtual Machine version:8" as *Virtual Machine version*,
 * Select "CentOS 4/5/6" as *Guest Operating System*,
-* Select "Use an existing virtual disk" in the *Select disk* step and choose the upload disk (see Step 5),
+* Select "Use an existing virtual disk" in the *Select disk* step and choose the uploaded disk (see Step 5),
 * Review the Virtual Machine configuration and start it.
 
 *Note.* Some steps like CPU, RAM or Network selection, are omitted since they are installation specific steps.
