@@ -10,7 +10,8 @@ Prerequisites
 -------------
 
 * To have root/admin permissions on the Sandbox,
-* To have root/admin access to an ESXi installation.
+* To have root/admin access to an ESXi installation,
+* To have installed the [qemu-img](http://wiki.qemu.org/Main_Page) tool for manipulating disk images.
 
 Step 1. Preparation of the Sandbox
 ----------------------------------
