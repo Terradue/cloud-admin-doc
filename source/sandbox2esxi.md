@@ -16,10 +16,12 @@ Prerequisites
 Step 1. Preparation of the Sandbox
 ----------------------------------
 
-This step prepares your Sandbox in terms OS configuration. Furthermore it makes the OS and the Application disks a single one (i.e. copy all the content of the */application* mount point in the */* mount poiny). Before to start, please make sure that:
+This step prepares your Sandbox in terms OS configuration. Furthermore it makes the OS and the Application disks a single one disk (i.e. copy all the content of the */application* mount point in the */* mount point). Before to start, please make sure that:
 
-1. The */application* contains only the needed stuff to be executed in Cluster mode (i.e. it is clean), 
-2. The */* has enough space to contain all the data of the */application* (If not, please contact the Operations Support at Terradue).  
+- The */application* contains only the needed stuff to be executed in Cluster mode (i.e. it is clean), 
+- The */* has enough space to contain all the data of the */application* (If not, please contact the Operations Support  Team at Terradue).
+
+If the previous facts are verified, proceed with the following procedure:
 
 * Login into the Sandbox,
 * Copy the content of the folder *resources/scripts* in a directory you prefer,
@@ -38,6 +40,7 @@ Step 3. Restore of the Sandbox
 ------------------------------
 
 * Login into the Sandbox,
+* Copy the content of the folder *resources/scripts* in a directory you prefer,
 * Type:
 ```bash
 $ ./resources/scripts/ciop-sandbox-restore.sh
@@ -58,8 +61,8 @@ $ qemu-img convert -O raw <source-disk> <destination-disk-raw>
 $ qemu-img convert -O vmdk <source-disk-raw> <destination-disk-vmdk>
 ```
 
-Step 5. Upload of the disk on ESXi
-----------------------------------
+Step 5. Upload of the disk on ESXi 5.x
+--------------------------------------
 
 * Copy the disk in VMDK format in a datastore you prefer. You can use the following command:
 
