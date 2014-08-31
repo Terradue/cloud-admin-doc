@@ -38,6 +38,8 @@ Step 2. Snapshot of the disk
 Step 3. Restore of the Sandbox
 ------------------------------
 
+This step reverts the changes done after a successful *Step 1*. It is important if you want to use the Sandbox as Development environment after the snapshot done at *Step 2*.
+
 * Login into the Sandbox,
 * Type:
 ```bash
