@@ -22,7 +22,7 @@ function logThis
     echo -e "\n[`date`] $1"
 }
 
-logThis "\nStarting the Developer Cloud Sandbox preparation phase for snapshot..."
+logThis "Starting the Developer Cloud Sandbox preparation for snapshot..."
 
 # check the application disk
 app_disk=`blkid | grep CIOP_APP | cut -d: -f1`
@@ -47,14 +47,17 @@ logThis "do you want to remove all the Oozie log (they will be not available in 
 read -n 1 answer
 if [ "$answer" == "y" ]; then mv /var/log/oozie /tmp/; fi
 
+# Prepare the Application disk
+logThis "Preparing Application disk..."
+
 umount /application
 mkdir -p /mnt/application
 mount $app_disk /mnt/application
-
-# TODO: check disk free on destination
 cp -r /mnt/application /application/
 
 # Prepare the remote contextualization
+logThis "Preparing the remote contextualization..."
+
 cp ./pre_init.sh /mnt/context/
 chmod +x /mnt/context/pre_init.sh
 
