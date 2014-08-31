@@ -17,6 +17,7 @@ fi
 
 # remove all external disks from /etc/fstab
 cp /etc/fstab /etc/fstab.bkp
+cp ./fstab /etc/fstab
 
 # move the old contextualization log file to another name
 mv /var/log/context.log /var/log/context.log.sandbox
