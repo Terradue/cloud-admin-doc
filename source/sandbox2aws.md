@@ -4,7 +4,14 @@ How to export a Terradue's Developer Cloud Sandbox to AWS
 Intended audience
 -----------------
 
-Anyone has the technical background to interact with *nix systems, BASH language, command line interfaces (CLI) and common network communication protocols. 
+Anyone has the technical background to interact with *nix systems, BASH language, command line interfaces (CLI) and common network communication protocols.
+
+Prerequisites
+-------------
+
+* To have root/admin permissions on the Sandbox,
+* To have an Amazon Web Services account,
+* To have installed the [qemu-img](http://wiki.qemu.org/Main_Page) tool for manipulating disk images.
 
 Step 1. Preparation of the Sandbox
 ----------------------------------
