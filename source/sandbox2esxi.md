@@ -16,7 +16,7 @@ Prerequisites
 Step 1. Preparation of the Sandbox
 ----------------------------------
 
-This step prepares your Sandbox in terms OS configuration. Furthermore it makes the OS and the Application disks a single one disk (i.e. copy all the content of the */application* mount point in the */* mount point). Before to start, please make sure that:
+This step prepares your Sandbox in terms OS configuration. Furthermore it makes the OS and the Application disks a single one disk (i.e. it copies all the content of the */application* mount point in the */* mount point). Before to start, please make sure that:
 
 - The */application* contains only the needed stuff to be executed in Cluster mode (i.e. it is clean), 
 - The */* has enough space to contain all the data of the */application* (If not, please contact the Operations Support  Team at Terradue).
