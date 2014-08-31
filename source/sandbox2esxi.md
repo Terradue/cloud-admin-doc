@@ -4,12 +4,19 @@ How to export a Terradue's Developer Cloud Sandbox to VMware ESXi
 Intended audience
 -----------------
 
-Anyone has the technical background to interact with *nix systems, BASH language, command line interfaces (CLI) and common network communication protocols. 
+Anyone has the technical background to interact with *nix systems, BASH language, command line interfaces (CLI) and common network communication protocols.
+
+Prerequisites
+-------------
+
+* To have root/admin permissions on the Sandbox,
+* To have root/admin access to an ESXi installation.
 
 Step 1. Preparation of the Sandbox
 ----------------------------------
 
 * Login into the Sandbox,
+* Copy the content of the folder *resources/scripts* in a directory you prefer,
 * Type:
 ```bash
 $ ./resources/scripts/ciop-sandbox-prepare.sh
