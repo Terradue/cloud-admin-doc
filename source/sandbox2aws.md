@@ -24,6 +24,7 @@ This step prepares your Sandbox in terms of OS configuration. Furthermore it mak
 If the previous facts are verified, proceed with the following steps:
 
 * Login into the Sandbox,
+* Copy the content of the folder *resources/scripts* in a directory you prefer,
 * Type:
 ```bash
 $ ./resources/scripts/ciop-sandbox-prepare.sh
@@ -38,7 +39,10 @@ Step 2. Snapshot of the disk
 Step 3. Restore of the Sandbox
 ------------------------------
 
+This step reverts the changes done after a successful *Step 1*. It is important if you want to use the Sandbox as Development environment after the snapshot done at *Step 2*.
+
 * Login into the Sandbox,
+* Copy the content of the folder *resources/scripts* in a directory you prefer,
 * Type:
 ```bash
 $ ./resources/scripts/ciop-sandbox-restore.sh
