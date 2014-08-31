@@ -21,7 +21,7 @@ This step prepares your Sandbox in terms OS configuration. Furthermore it makes 
 - The */application* contains only the needed stuff to be executed in Cluster mode (i.e. it is clean), 
 - The */* has enough space to contain all the data of the */application* (If not, please contact the Operations Support  Team at Terradue).
 
-If the previous facts are verified, proceed with the following procedure:
+If the previous facts are verified, proceed with the following steps:
 
 * Login into the Sandbox,
 * Copy the content of the folder *resources/scripts* in a directory you prefer,
