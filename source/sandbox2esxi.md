@@ -18,8 +18,8 @@ Step 1. Preparation of the Sandbox
 
 This step prepares your Sandbox in terms OS configuration. Furthermore it makes the OS and the Application disks a single one (i.e. copy all the content of the */application* mount point in the */* mount poiny). Before to start, please make sure that:
 
-# The */application* contains only the needed stuff to be executed in Cluster mode (i.e. it is clean), 
-# The */* has enough space to contain all the data of the */application* (If not, please contact the Operations Support at Terradue).  
+#. The */application* contains only the needed stuff to be executed in Cluster mode (i.e. it is clean), 
+#. The */* has enough space to contain all the data of the */application* (If not, please contact the Operations Support at Terradue).  
 
 * Login into the Sandbox,
 * Copy the content of the folder *resources/scripts* in a directory you prefer,
