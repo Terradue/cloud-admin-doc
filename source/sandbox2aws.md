@@ -1,5 +1,5 @@
-How to export a Terradue's Developer Cloud Sandbox to AWS
-=========================================================
+How to export a Terradue's Developer Cloud Sandbox to AWS EC2
+=============================================================
 
 Intended audience
 -----------------
