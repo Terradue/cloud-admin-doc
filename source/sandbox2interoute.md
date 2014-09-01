@@ -53,7 +53,7 @@ Step 4. Upload of the disk on Interoute
 
 * Follow the walk through described [here](https://hub.interoute.com/VDCImageUpload/assets/ImageUploader/) (There is a PDF version in this repository, under *resources/pdf*).
 
-Note. To upload your disk image, we suggest to:
+*Note.* To upload your disk image, we suggest to:
 
 * Use an FTP client (e.g. Cyberduck), using the provided *FTP: Secure One time directory* link,
 * Use a connection with an high upload bandwidth, otherwise your upload will be stuck during the process.
