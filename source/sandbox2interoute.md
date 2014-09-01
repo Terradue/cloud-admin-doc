@@ -52,6 +52,9 @@ Step 4. Upload of the disk on Interoute
 ---------------------------------------
 
 * Follow the walk through described [here](https://hub.interoute.com/VDCImageUpload/assets/ImageUploader/) (There is a PDF version in this repository, under *resources/pdf*).
+* You have to choose *QCOW2_FLAT* as *Format*:
+
+![Interoute Image Importer](resources/images/interoute_importer.png "Interoute Image Importer")
 
 *Note.* To upload your disk image, we suggest to:
 
