@@ -29,11 +29,13 @@ If the previous facts are verified, proceed with the following steps:
 $ sh ./resources/scripts/ciop-sandbox-prepare.sh
 ```
 
-Step 2. Snapshot of the disk
-----------------------------
+Step 2. Snapshot of the OS disk
+-------------------------------
 
 * Login into the Cloud Controller,
 * Make an **Hot** snapshot of the OS disk.
+
+![Snaphsot of the OS disk](resources/images/ccb_hot_snapshot.png "Snaphsot of the OS disk")
 
 Step 3. Restore of the Sandbox
 ------------------------------
@@ -50,6 +52,11 @@ Step 4. Upload of the disk on Interoute
 ---------------------------------------
 
 * Follow the walk through described [here](https://hub.interoute.com/VDCImageUpload/assets/ImageUploader/) (There is a PDF version in this repository, under *resources/pdf*).
+
+Note. To upload your disk image, we suggest to:
+
+* Use an FTP client (e.g. Cyberduck), using the provided *FTP: Secure One time directory* link,
+* Use a connection with an high upload bandwidth, otherwise your upload will be stuck during the process.
 
 References
 ----------
