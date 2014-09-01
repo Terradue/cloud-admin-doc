@@ -30,11 +30,13 @@ If the previous facts are verified, proceed with the following steps:
 $ sh ./resources/scripts/ciop-sandbox-prepare.sh
 ```
 
-Step 2. Snapshot of the disk
-----------------------------
+Step 2. Snapshot of the OS disk
+-------------------------------
 
 * Login into the Cloud Controller,
 * Make an **Hot** snapshot of the OS disk.
+
+![Snaphsot of the OS disk](resources/images/ccb_hot_snapshot.png "Snaphsot of the OS disk")
 
 Step 3. Restore of the Sandbox
 ------------------------------
