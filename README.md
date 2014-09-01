@@ -8,7 +8,7 @@ This series of How Tos helps a Cloud Administrator on exporting a Terradue's Dev
 
 ## Extra
 
-The following guides provide additional information on how to perform specific tasks on a certain environment. Feel free to request, comment or made your suggestions:
+The following guides provide additional information on how to perform specific tasks on a certain environment. Feel free to comment or make your suggestions:
 
 * [How to resize a Terradue's Developer Cloud Sandbox running at AWS EC2](source/resizeaws.md)
 
