@@ -56,7 +56,7 @@ Step 4. Upload of the disk on Interoute
 *Note.* To upload your disk image, we suggest to:
 
 * Use an FTP client (e.g. Cyberduck), using the provided *FTP: Secure One time directory* link,
-* Use a connection with an high upload bandwidth (0.5 Mbps is not enough), otherwise your upload will be stuck during the process.
+* Use a connection with an high upload bandwidth (*0.5 Mbps is not enough*), otherwise your upload will be stuck during the process.
 
 References
 ----------
