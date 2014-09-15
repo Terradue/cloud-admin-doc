@@ -43,7 +43,7 @@ Partition number (1-4, default 1): 2
 First sector (63-40558591, default 63): 64
 Last sector, +sectors or +size{K,M,G} (63-40558591, default 40558591): [PRESS ENTER TO ACCEPT LARGEST DEFAULT]
 (fdisk) Command (m for help): t
-Partition number (1-4): 1
+Partition number (1-4): 2
 Hex Code (type L to list codes): 8e
 (fdisk) Command (m for help): w
 ```
