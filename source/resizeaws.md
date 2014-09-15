@@ -59,7 +59,7 @@ Extend the LVM
 * Type:
 ```bash
 $ pvresize /dev/xvda2
-$ lvextend -l 100%FREE /dev/mapper/vg_centos-lv_root 
+$ lvextend -l +100%FREE /dev/mapper/vg_centos-lv_root 
 $ resize2fs /dev/mapper/vg_centos-lv_root
 ```
 
