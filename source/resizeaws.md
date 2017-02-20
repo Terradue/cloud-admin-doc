@@ -10,6 +10,10 @@ Re-create the partition
 -----------------------
 
 * Login into the Sandbox,
+* Update to the latest kernel and fdisk releases and reboot: 
+```bash
+$ sudo yum update -y util-linux-ng && sudo reboot
+```
 * Check your partition table by typing:
 ```bash
 $ fdisk -l /dev/xvda
