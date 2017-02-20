@@ -60,11 +60,16 @@ $ reboot
 Extend the LVM
 ---------------
 
-* Type:
+* If you're confident about the final outcome :
 ```bash
-$ pvresize /dev/xvda2
-$ lvextend -l +100%FREE /dev/mapper/vg_centos-lv_root 
-$ resize2fs /dev/mapper/vg_centos-lv_root
+# pvresize /dev/xvda2 && lvextend -l +100%FREE /dev/mapper/vg_centos-lv_root && resize2fs /dev/mapper/vg_centos-lv_root && df -h && reboot
+```
+
+* Otherwise extend step pby step :
+```bash
+$ sudo pvresize /dev/xvda2
+$ sudo lvextend -l +100%FREE /dev/mapper/vg_centos-lv_root 
+$ sudo resize2fs /dev/mapper/vg_centos-lv_root
 ```
 
 * Check the new size:
