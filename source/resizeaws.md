@@ -16,7 +16,7 @@ $ sudo yum update -y util-linux-ng && sudo reboot
 ```
 * Check your partition table by typing:
 ```bash
-$ fdisk -l /dev/xvda
+$ fdisk -l -c -u /dev/xvda
 
 Disk /dev/xvda: 161.1 GB, 161061273600 bytes
 255 heads, 63 sectors/track, 19581 cylinders
