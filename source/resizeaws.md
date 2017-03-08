@@ -35,7 +35,7 @@ Partition 1 does not end on cylinder boundary.
 
 * Modify the partition table, by typing:
 ```bash
-$ fdisk /dev/xvda
+$ fdisk -c -u /dev/xvda
 (fdisk) Command (m for help): d
 (fdisk) Partition number (1-4): 2
 (fdisk) Command (m for help): n
