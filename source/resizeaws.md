@@ -10,9 +10,10 @@ Re-create the partition
 -----------------------
 
 * Login into the Sandbox,
-* Update to the latest kernel and fdisk releases and reboot: 
+* Update to the latest kernel and fdisk releases ; reboot if the packages got updated : 
 ```bash
-$ sudo yum update -y util-linux-ng && sudo reboot
+$ sudo yum update -y util-linux-ng
+$ sudo reboot # if needed
 ```
 * Check your partition table by typing:
 ```bash
