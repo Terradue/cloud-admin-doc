@@ -68,7 +68,7 @@ $ sudo lvextend -l +100%FREE /dev/mapper/vg_centos-lv_root
 $ sudo resize2fs /dev/mapper/vg_centos-lv_root
 ```
 
-* Check the new size ; eventually reboot:
+* Check the new size:
 ```bash
 $ df -h
 ```
